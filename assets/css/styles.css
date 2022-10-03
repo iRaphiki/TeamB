@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url(../webfonts/SourceSansPro-Regular.otf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+:root {
+	font-family: 'Source Sans Pro';
+}
+/* Body */
+/* > Header */
+
+/* > Spotlight #1 */
+
+/* > Spotlight #2 */
+
+/* > Spotlight #3 */
+
+/* > Gallery */
+
+/* > Footer */
