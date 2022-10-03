@@ -1,13 +1,63 @@
 @font-face {
-	font-family: 'Open Sans';
-	src: url(../webfonts/OpenSans-Regular.ttf);
+  font-family: "Open Sans";
+  src: url(../webfonts/OpenSans-Regular.ttf);
 }
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 :root {
-	font-family: 'Open Sans';
+  font-family: "Open Sans";
+}
+header {
+  display: flex;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  font-style: italic;
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner {
+  width: 100%;
+}
+p {
+	font-size: 1em;
+  height: 30%;
+  padding: 2em;
+  object-fit: cover;
+  color: #1f1f1f;
+}
+p:first-of-type{
+	font-size: 1.5em;
+
+}
+
+button {
+  border: 1px solid gray;
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 3em;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+  font-size: 0.8rem;
+}
+.CODE {
+  color: #e03636;
+  font-weight: bold;
+}
+code {
+  background-color: #f2f2f2;
+  padding: 0.3em;
 }
