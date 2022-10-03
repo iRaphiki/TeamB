@@ -1,13 +1,58 @@
 @font-face {
-	font-family: 'Open Sans';
-	src: url(../webfonts/OpenSans-Regular.ttf);
+  font-family: "Open Sans";
+  src: url(../webfonts/OpenSans-Regular.ttf);
 }
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 :root {
-	font-family: 'Open Sans';
+  font-family: "Open Sans";
+}
+/* spotlight2 */
+.spotlight2 {
+  /* hago grid de 6 columnas texto a la izq e img a la dch */
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+}
+body > article > div:nth-child(1) {
+  width: 65%;
+  padding: 0 2em;
+}
+body > article > div:nth-child(2) {
+  width: 35%;
+}
+body > article > div:nth-child(2) > img {
+  width: 100%;
+  height: auto;
+}
+body > article > div:nth-child(1) > h1 {
+  font-weight: lighter;
+  margin: 1em 0;
+  font-size: 3rem;
+}
+body > article > div:nth-child(1) > p {
+  font-weight: 100;
+  line-height: 1.5em;
+}
+body > article > div:nth-child(1) > p > code:nth-child(2) {
+  background-color: rgb(228, 222, 222);
+  border-radius: 0.3em;
+  padding: 0.3em;
+}
+body > article > div:nth-child(1) > p > code:nth-child(3) {
+  background-color: rgb(228, 222, 222);
+  border-radius: 0.3em;
+  padding: 0.3em;
+}
+body > article > div:nth-child(1) > button {
+  border: 1px solid rgb(228, 222, 222);
+  padding: 1em 1.5em;
+  border-radius: 1.5em;
+  background-color: white;
+  font-size: 0.7rem;
+  margin: 2.5em 0;
 }
