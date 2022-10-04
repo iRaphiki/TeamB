@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   src: url(../webfonts/OpenSans-Regular.ttf);
-}
+} */
 * {
   margin: 0;
   padding: 0;
@@ -9,41 +9,55 @@
   box-sizing: border-box;
 }
 :root {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
+  font-family: "Source Sans Pro", sans-serif;
 }
-section > .spotlight1 {
+section > article.spotlight1,
+section > article.spotlight3 {
   width: 100%;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(183, 181, 181);
 }
-.spotlight1 > div.imagen > .taza {
+.spotlight1 > div.imagen > img,
+.spotlight3 div.imagen img {
   width: 100%;
 }
-.spotlight1 > .imagen {
+.spotlight1 > div.imagen,
+.spotlight3 div.imagen {
   width: 35%;
 }
-.spotlight1 > div.texto > h1 {
+.spotlight1 > div.texto,
+.spotlight3 div.texto {
+  width: 65%;
+  padding: 0 5em;
+}
+.spotlight1 > div.texto > h1,
+.spotlight3 > div.texto > h1 {
   font-weight: lighter;
   font-size: 3rem;
 }
-.spotlight1 > .texto {
-  width: 65%;
-  padding: 0 5em;
-  margin: auto;
-}
-.spotlight1 > .texto > p {
+.spotlight1 > div.texto > p,
+.spotlight3 > div.texto > p {
   font-weight: lighter;
   text-align: left;
-  margin: 2em 0em;
+  margin: 1.5em 0em;
   line-height: 1.5em;
+  font-size: larger;
 }
-button {
-  border-radius: 50px;
-  border: 1px solid rgb(228, 222, 222);
+button.learnmore {
+  border-radius: 30px;
+  border: 1px solid rgb(183, 181, 181);
   background-color: white;
-  padding: 1em 1.5em;
-  font-size: 0.7rem;
+  padding: 1.2em 2em;
+  /* font-size: 0.7rem; */
 }
-.spotlight1 > div.texto > p > code{
-  background-color: rgb(228, 222, 222);
+button.learnmore:hover {
+  border: 1px solid #6edcea;
+  color: #6edcea;
+}
+div.texto > p > code {
+  background-color: #f2f2f2;
+  padding: 0.4em;
+  border-radius: 5px;
 }
