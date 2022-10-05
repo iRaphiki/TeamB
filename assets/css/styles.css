@@ -18,41 +18,115 @@
   align-items: center;
   /* flex-direction: row; */
 }
-body > article > div:nth-child(1) {
+article > div:nth-child(1) {
   width: 65%;
   padding: 0 2em;
 }
-body > article > div:nth-child(2) {
+article > div:nth-child(2) {
   width: 35%;
 }
-body > article > div:nth-child(2) > img {
+article > div:nth-child(2) > img {
   width: 100%;
   height: auto;
 }
-body > article > div:nth-child(1) > h1 {
+article > div:nth-child(1) > h1 {
   font-weight: lighter;
   margin: 1em 0;
   font-size: 3rem;
 }
-body > article > div:nth-child(1) > p {
+article > div:nth-child(1) > p {
   font-weight: 100;
   line-height: 1.5em;
 }
-body > article > div:nth-child(1) > p > code:nth-child(2) {
+article > div:nth-child(1) > p > code:nth-child(2) {
   background-color: rgb(228, 222, 222);
   border-radius: 0.3em;
   padding: 0.3em;
 }
-body > article > div:nth-child(1) > p > code:nth-child(3) {
+article > div:nth-child(1) > p > code:nth-child(3) {
   background-color: rgb(228, 222, 222);
   border-radius: 0.3em;
   padding: 0.3em;
 }
-body > article > div:nth-child(1) > button {
+article > div:nth-child(1) > button {
   border: 1px solid rgb(228, 222, 222);
   padding: 1em 1.5em;
   border-radius: 1.5em;
   background-color: white;
   font-size: 0.7rem;
   margin: 2.5em 0;
+}
+/* Aquí comienza Items */
+article.items > section {
+  /* Hago rejilla grid de tres columnas */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+article.items {
+  text-align: center;
+  width: 80%;
+}
+i {
+  /* Hago el circulo a los iconos */
+  border: 1px solid rgb(228, 222, 222);
+  border-radius: 50%;
+  padding: 1em;
+  font-size: 1.8rem;
+}
+article.items > section > div {
+  /* Configuro cada uno de los div del grid */
+  padding: 2em;
+  margin: 0;
+}
+body > article.items > section > div > h1 {
+  margin: 1em;
+}
+article.items > section > div:nth-child(8) {
+  border: 1px solid rgb(228, 222, 222);
+}
+article.items > section > div:nth-child(5) {
+  border-right: 1px solid rgb(228, 222, 222);
+  border-left: 1px solid rgb(228, 222, 222);
+}
+article.items > section > div:nth-child(1) {
+  border-bottom: 1px solid rgb(228, 222, 222);
+  /* border-left: 1px solid rgb(228, 222, 222);*/
+} 
+article.items > section > div:nth-child(3) {
+  border-bottom: 1px solid rgb(228, 222, 222);
+  /* border-right: 1px solid rgb(228, 222, 222); */
+}
+article.items > section > div:nth-child(2) {
+  border-left: 1px solid rgb(228, 222, 222);
+  border-right: 1px solid rgb(228, 222, 222);
+  border-bottom: 1px solid rgb(228, 222, 222);
+}
+article.items > section > div:nth-child(7),
+div:nth-child(9) {
+  border-top: 1px solid rgb(228, 222, 222);
+  border-bottom: 1px solid rgb(228, 222, 222);
+}
+article.items > section > div:nth-child(11) {
+  border-left: 1px solid rgb(228, 222, 222);
+  border-right: 1px solid rgb(228, 222, 222);
+}
+article.items > h1 {
+  margin: 1em;
+}
+article.items > p {
+  margin-bottom: 3em;
+}
+body > article.items > div {
+  border: 1px solid rgb(228, 222, 222);
+}
+article.items > section > {
+}
+body > article.items > section {
+  margin: 3em;
+}
+body > article.items > p > code:nth-child(2), code:nth-child(3) {
+  /* Configuro las etiquetas code de onload y onscroll */
+  background-color: rgb(228, 222, 222);
+  border-radius: 0.3em;
+  padding: 0.3em;
 }
